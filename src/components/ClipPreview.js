@@ -100,7 +100,12 @@ export default function Clip({ clip, style, isVisible, isScrolling, isLink }) {
         <ClipTitle>
           {clip ? (
             isLink ? (
-              <Link to={`/${clip.created_utc}`}>{clip.title}</Link>
+              <Link
+                to={`/${clip.created_utc}`}
+                title={`View Overwatch clip details`}
+              >
+                {clip.title}
+              </Link>
             ) : (
               clip.title
             )

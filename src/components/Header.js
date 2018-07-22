@@ -51,7 +51,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <MenuContainer>Hero filters coming soon…</MenuContainer>
-      <Link to="/">
+      <Link to="/" title="Overclips — Best Overwatch potg, highlights & clips">
         <Logo />
       </Link>
       <ButtonsContainer>
