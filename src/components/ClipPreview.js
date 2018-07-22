@@ -68,7 +68,9 @@ const HtmlEmbedContainer = styled.section`
   width: 90%;
   max-width: 1600px;
   background-color: #000;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 4px;
   overflow: hidden;
 
@@ -86,11 +88,6 @@ function canHandleVideoSource(url: string) {
   //TODO: develop this capability further
   return false;
   // if (url.includes('gfycat')) return true;
-}
-
-//TODO: review removal of this
-function getVideoContainerStyle(clip: IClip, isVisible: boolean): {} {
-  return isVisible ? {} : { backgroundImage: `url(${clip.thumbnail})` };
 }
 
 export default function Clip({ clip, style, isVisible, isScrolling, isLink }) {
@@ -136,7 +133,7 @@ export default function Clip({ clip, style, isVisible, isScrolling, isLink }) {
           dangerouslySetInnerHTML={{
             __html: isVisible ? clip.embed.content : ''
           }}
-          style={getVideoContainerStyle(clip, isVisible)}
+          style={{ backgroundImage: `url(${clip.thumbnail})` }}
         />
       )}
       {/* <DataGatherer clip={clip} /> */}
