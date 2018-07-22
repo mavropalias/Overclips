@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRedditAlien, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+  faRedditAlien,
+  faTwitter,
+  faGithub,
+  faGit
+} from '@fortawesome/free-brands-svg-icons';
 import Logo from './Logo';
 import { Button } from './Button';
 
@@ -51,6 +56,10 @@ function openTwitter(): void {
   window.open('https://twitter.com/overclips_', '_blank');
 }
 
+function openGithub(): void {
+  window.open('https://github.com/mavropalias/overclips', '_blank');
+}
+
 export function Header() {
   return (
     <HeaderContainer>
@@ -61,6 +70,9 @@ export function Header() {
       <ButtonsContainer>
         <Button secondary icon onClick={openTwitter}>
           <FontAwesomeIcon icon={faTwitter} />
+        </Button>
+        <Button secondary icon onClick={openGithub}>
+          <FontAwesomeIcon icon={faGithub} />
         </Button>
         <Button secondary icon onClick={openSubreddit}>
           <FontAwesomeIcon icon={faRedditAlien} />
