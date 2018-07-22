@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRedditAlien } from '@fortawesome/free-brands-svg-icons';
+import { faRedditAlien, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Logo from './Logo';
 import { Button } from './Button';
 
@@ -44,7 +44,11 @@ const MenuContainer = styled.div`
 `;
 
 function openSubreddit(): void {
-  window.open('https://reddit.com/r/overclips', '_blank');
+  window.open('https://reddit.com/r/Overclips', '_blank');
+}
+
+function openTwitter(): void {
+  window.open('https://twitter.com/overclips_', '_blank');
 }
 
 export function Header() {
@@ -55,6 +59,9 @@ export function Header() {
         <Logo />
       </Link>
       <ButtonsContainer>
+        <Button secondary icon onClick={openTwitter}>
+          <FontAwesomeIcon icon={faTwitter} />
+        </Button>
         <Button secondary icon onClick={openSubreddit}>
           <FontAwesomeIcon icon={faRedditAlien} />
         </Button>
