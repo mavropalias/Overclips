@@ -58,7 +58,7 @@ export default class Clips extends React.PureComponent {
                     overscanRowCount={OVERSCAN_ROW_COUNT}
                     onRowsRendered={onRowsRendered}
                     ref={registerChild}
-                    rowCount={REMOTE_ROW_COUNT}
+                    rowCount={this.props.clips.length}
                     estimatedRowSize={Math.round(window.innerHeight * 0.85)}
                     rowHeight={this.getRowHeight}
                     rowRenderer={this.rowRenderer}
