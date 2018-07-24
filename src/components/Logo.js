@@ -29,9 +29,7 @@ function getTagline(): string {
 }
 
 export default class Logo extends Component {
-  state = {
-    tagline: getTagline()
-  };
+  state = { tagline: 'Billions & billions of Overwatch clips' };
 
   onLogoClick(): void {
     //TODO: only scrollTo if we're on the homepage
@@ -39,9 +37,7 @@ export default class Logo extends Component {
       top: 0,
       behavior: 'instant'
     });
-    this.setState({
-      tagline: getTagline()
-    });
+    this.setState({ tagline: getTagline() });
   }
 
   render() {
