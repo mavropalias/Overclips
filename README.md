@@ -5,6 +5,6 @@ Official repo of https://overclips.com
 
 Overclips is a React SPA. It uses GraphQL to connect to the backend, which run on AWS (DynamoDB & AppSync).
 
-Storybook available at [https://mavropalias.github.io/overclips/](https://mavropalias.github.io/overclips/) (work in progress).
+Storybook available at [docs.overclips.com](https://docs.overclips.com/) (work in progress).
 
 (C) Kostas Mavropalias
