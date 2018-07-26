@@ -34,7 +34,7 @@ function getButtonClassNames(icon: boolean, secondary: boolean): string {
   return classNames;
 }
 
-export function Button({ secondary, children, icon, onClick }) {
+export default function Button({ secondary, children, icon, onClick }) {
   return (
     <ButtonContainer
       className={getButtonClassNames(icon, secondary)}
