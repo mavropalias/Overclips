@@ -9,7 +9,7 @@ import {
   faGit
 } from '@fortawesome/free-brands-svg-icons';
 import Logo from './Logo';
-import { Button } from './Button';
+import Button from './Button';
 
 const HeaderContainer = styled.header`
   display: flex;
