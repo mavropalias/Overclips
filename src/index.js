@@ -7,7 +7,7 @@ import { Rehydrated } from 'aws-appsync-react';
 import { ApolloProvider } from 'react-apollo';
 
 import App from './App';
-import { Header } from './components/Header';
+import Header from './components/Header';
 import './index.css';
 
 import { appSyncConfig } from './AppSync';
