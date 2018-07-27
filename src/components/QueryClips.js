@@ -5,31 +5,8 @@ import Error from './Error';
 import ClipPreview from './ClipPreview';
 import Clips from './Clips';
 
+import { loadMoreRows } from '../lib/util';
 import { LIST_CLIPS } from '../graphql/ListClips';
-
-const loadMoreRows = ({ startIndex, stopIndex, nextToken, fetchMore }) => {
-  fetchMore({
-    query: LIST_CLIPS,
-    variables: {
-      first: stopIndex - startIndex,
-      after: nextToken
-    },
-    updateQuery: (prev, { fetchMoreResult }) => {
-      if (!fetchMoreResult) return prev;
-
-      const combinedListClips = Object.assign({}, prev.listClips, {
-        items: [...prev.listClips.items, ...fetchMoreResult.listClips.items],
-        nextToken: fetchMoreResult.listClips.nextToken
-      });
-
-      const returnClips = Object.assign({}, prev, {
-        listClips: combinedListClips
-      });
-
-      return returnClips;
-    }
-  });
-};
 
 export default class QueryClips extends React.PureComponent {
   render() {
@@ -40,14 +17,23 @@ export default class QueryClips extends React.PureComponent {
         fetchPolicy="cache-and-network"
       >
         {({ loading, error, data, fetchMore }) => {
-          if (loading && !data.listClips) return <ClipPreview />;
-          if (error) return <Error message={error.message} />;
+          if (error) {
+            return <Error message={error.message} />;
+          }
+
+          if (loading && !data.listClips) {
+            return <ClipPreview />;
+          } else if (!loading && !data.listClips) {
+            return <div>No clips found</div>;
+          }
+
           return (
             <Clips
               clips={data.listClips.items}
-              loadMoreRows={(params) => {
+              loadMoreRows={({ startIndex, stopIndex }) => {
                 return loadMoreRows({
-                  ...params,
+                  startIndex: startIndex,
+                  stopIndex: stopIndex,
                   nextToken: data.listClips.nextToken,
                   fetchMore: fetchMore
                 });

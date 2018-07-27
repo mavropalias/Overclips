@@ -38,6 +38,9 @@ export default class Clips extends React.PureComponent {
   };
 
   render() {
+    if (!(this.props.clips && this.props.clips.length > 0))
+      return <span>No clips to display</span>;
+
     return (
       <InfiniteLoader
         isRowLoaded={this.isRowLoaded}
