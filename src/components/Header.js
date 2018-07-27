@@ -60,7 +60,7 @@ function openGithub(): void {
   window.open('https://github.com/mavropalias/overclips', '_blank');
 }
 
-export function Header() {
+export default function Header() {
   return (
     <HeaderContainer>
       <MenuContainer>Hero filters coming soon…</MenuContainer>

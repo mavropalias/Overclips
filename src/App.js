@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import QueryClips from './components/QueryClips';
 import Clip from './components/Clip';
-import { Header } from './components/Header';
+import Header from './components/Header';
 
 import './App.css';
 
