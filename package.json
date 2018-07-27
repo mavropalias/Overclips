@@ -35,6 +35,7 @@
     "@storybook/addon-actions": "^3.4.8",
     "@storybook/addon-links": "^3.4.8",
     "@storybook/addon-storyshots": "^3.4.8",
+    "@storybook/addon-storyshots-puppeteer": "^4.0.0-alpha.11",
     "@storybook/addons": "^3.4.8",
     "@storybook/react": "^3.4.8",
     "ajv": "^6.5.2",
