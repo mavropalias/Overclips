@@ -117,7 +117,11 @@ export default function Clip({ clip, style, isVisible, isScrolling, isLink }) {
             <ClipSubtitle> by {clip.author} </ClipSubtitle>
             <ClipPermalink>
               on{' '}
-              <a href={`https://reddit.com${clip.permalink}`} target="_blank">
+              <a
+                href={`https://reddit.com${clip.permalink}`}
+                target="_blank"
+                rel="noopener"
+              >
                 Reddit
               </a>.
             </ClipPermalink>
