@@ -165,14 +165,14 @@ exports[`Storyshots ClipPreview hidden 1`] = `
        
     </h2>
     <aside
-      className="sc-EHOje ldGvkl"
+      className="sc-EHOje cKqzRH"
     >
       Posted
        
       <time
         dateTime={"2018-07-27T03:40:21.000Z"}
       >
-        17 hours ago
+        a day ago
       </time>
       <span
         className="sc-bZQynM bOrPFB"
@@ -234,14 +234,14 @@ exports[`Storyshots ClipPreview visible & link 1`] = `
        
     </h2>
     <aside
-      className="sc-EHOje ldGvkl"
+      className="sc-EHOje cKqzRH"
     >
       Posted
        
       <time
         dateTime={"2018-07-27T03:40:21.000Z"}
       >
-        17 hours ago
+        a day ago
       </time>
       <span
         className="sc-bZQynM bOrPFB"
@@ -297,14 +297,14 @@ exports[`Storyshots ClipPreview visible 1`] = `
        
     </h2>
     <aside
-      className="sc-EHOje ldGvkl"
+      className="sc-EHOje cKqzRH"
     >
       Posted
        
       <time
         dateTime={"2018-07-27T03:40:21.000Z"}
       >
-        17 hours ago
+        a day ago
       </time>
       <span
         className="sc-bZQynM bOrPFB"

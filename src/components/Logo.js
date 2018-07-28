@@ -14,12 +14,12 @@ const LogoContainer = styled.span`
   border-radius: 8px;
 `;
 const Tagline = styled.span`
-  font-size: 11px;
-  line-height: 11px;
+  font-size: 12px;
+  line-height: 12px;
   color: #767676;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 4px;
+  padding-top: 8px;
   font-weight: 300;
   white-space: nowrap;
 `;

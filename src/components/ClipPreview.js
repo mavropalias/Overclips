@@ -51,7 +51,7 @@ const ClipTitle = styled.h2`
 const ClipMeta = styled.aside`
   color: #767676;
   flex-shrink: 0;
-  font-size: 11px;
+  font-size: 12px;
 `;
 
 const ClipSubtitle = styled.span``;
