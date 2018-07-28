@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import logo from '../assets/logo.svg';
 
 const LogoContainer = styled.span`
   display: flex;
@@ -43,7 +42,7 @@ export default class Logo extends Component {
   render() {
     return (
       <LogoContainer onClick={this.onLogoClick.bind(this)}>
-        <img style={{ height: '14px' }} src={logo} alt="Overclips logo" />
+        <img style={{ height: '14px' }} src="logo.svg" alt="Overclips logo" />
         <Tagline>{this.state.tagline}</Tagline>
       </LogoContainer>
     );

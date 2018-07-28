@@ -534,7 +534,7 @@ exports[`Storyshots Header default 1`] = `
         }
       />
       <span
-        className="sc-jzJRlG cuUrDJ"
+        className="sc-jzJRlG bUyonZ"
       >
         Billions & billions of Overwatch clips
       </span>
@@ -648,7 +648,7 @@ exports[`Storyshots Logo default 1`] = `
     }
   />
   <span
-    className="sc-jzJRlG cuUrDJ"
+    className="sc-jzJRlG bUyonZ"
   >
     Billions & billions of Overwatch clips
   </span>
