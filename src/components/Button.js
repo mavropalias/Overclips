@@ -28,8 +28,13 @@ const ButtonContainer = styled.button`
 function getButtonClassNames(icon: boolean, secondary: boolean): string {
   let classNames: string = '';
 
-  if (icon) classNames += ' icon ';
-  if (secondary) classNames += ' secondary ';
+  if (icon) {
+    classNames += ' icon ';
+  }
+
+  if (secondary) {
+    classNames += ' secondary ';
+  }
 
   return classNames;
 }

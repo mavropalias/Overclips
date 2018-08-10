@@ -13,7 +13,9 @@ export const loadMoreRows = ({
       after: nextToken
     },
     updateQuery: (prev, { fetchMoreResult }) => {
-      if (!fetchMoreResult) return prev;
+      if (!fetchMoreResult) {
+        return prev;
+      }
 
       const combinedListClips = Object.assign({}, prev.listClips, {
         items: [...prev.listClips.items, ...fetchMoreResult.listClips.items],

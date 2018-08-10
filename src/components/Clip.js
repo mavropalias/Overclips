@@ -29,8 +29,14 @@ export default function Clip({ match }) {
       variables={{ pk: 'feed', sk: match.params.id }}
     >
       {({ loading, error, data }) => {
-        if (loading) return <ClipPreview />;
-        if (error) return <Error message={error.message} />;
+        if (loading) {
+          return <ClipPreview />;
+        }
+
+        if (error) {
+          return <Error message={error.message} />;
+        }
+
         return (
           <ClipContainer>
             <ClipPreview
