@@ -13,6 +13,8 @@ export const LIST_CLIPS = gql`
         url
         embed {
           content
+          width
+          height
         }
       }
       nextToken

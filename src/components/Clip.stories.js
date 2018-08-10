@@ -11,7 +11,7 @@ const mockBase = {
     query: GET_CLIP,
     variables: {
       pk: 'feed',
-      sk: '1532653938'
+      sk: '1533869639'
     }
   }
 };
@@ -49,7 +49,7 @@ storiesOf('Clip', module)
       <Clip
         match={{
           params: {
-            id: '1532653938'
+            id: '1533869639'
           }
         }}
       />
@@ -60,7 +60,7 @@ storiesOf('Clip', module)
       <Clip
         match={{
           params: {
-            id: '1532653938'
+            id: '1533869639'
           }
         }}
       />
@@ -71,7 +71,7 @@ storiesOf('Clip', module)
       <Clip
         match={{
           params: {
-            id: '1532653938'
+            id: '1533869639'
           }
         }}
       />

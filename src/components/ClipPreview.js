@@ -3,44 +3,61 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Moment from 'react-moment';
 
-import { IClip } from '../data/clip.interface';
 import VideoPlayer from './VideoPlayer';
+import { IClip } from '../data/clip.interface';
 // import DataGatherer from './DataGatherer';
 
 const ClipContainer = styled.article`
-  width: 100%;
-  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 96px;
+  padding-bottom: 32px;
   text-align: left;
   overflow: hidden;
+
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+    padding-bottom: 96px;
+  }
 `;
 
 const Header = styled.header`
   width: 90%;
+  min-width: calc(100% - 16px);
   max-width: 1600px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: flex-start;
+  @media (min-width: 768px) {
+    min-width: auto;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-end;
   }
 `;
 
 const ClipTitle = styled.h2`
+  width: 100%;
   margin: 0;
-  font-weight: 600;
+  font-weight: 500;
   color: #767676;
-  font-size: 16px;
+  font-size: 13px;
+  line-height: 14px;
   margin-right: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   @media (min-width: 768px) {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
   }
 
   @media (min-width: 1024px) {
@@ -62,35 +79,19 @@ const ClipPermalink = styled.span`
   }
 `;
 
-const HtmlEmbedContainer = styled.section`
-  flex: 1;
-  display: flex;
-  width: 90%;
-  max-width: 1600px;
-  background-color: #000;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-  overflow: hidden;
-
-  & > iframe {
-    flex: 1;
-    height: 100%;
-  }
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
-`;
-
-function canHandleVideoSource(url: string) {
-  //TODO: develop this capability further
-  return false;
-  // if (url.includes('gfycat')) return true;
-}
-
-export default function Clip({ clip, style, isVisible, isScrolling, isLink }) {
+export default function Clip({
+  clip,
+  style,
+  isVisible,
+  isScrolling,
+  isLink
+}: {
+  clip: IClip,
+  style?: {},
+  isVisible: boolean,
+  isScrolling: boolean,
+  isLink: boolean
+}) {
   return (
     <ClipContainer style={style}>
       <Header>
@@ -130,16 +131,11 @@ export default function Clip({ clip, style, isVisible, isScrolling, isLink }) {
           ''
         )}
       </Header>
-      {!clip || canHandleVideoSource(clip.url) ? (
-        <VideoPlayer clip={clip} />
-      ) : (
-        <HtmlEmbedContainer
-          dangerouslySetInnerHTML={{
-            __html: isVisible ? clip.embed.content : ''
-          }}
-          style={{ backgroundImage: `url(${clip.thumbnail})` }}
-        />
-      )}
+      <VideoPlayer
+        clip={clip}
+        playing={isVisible /* && !isScrolling */}
+        visible={isVisible}
+      />
       {/* <DataGatherer clip={clip} /> */}
     </ClipContainer>
   );

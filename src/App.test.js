@@ -12,7 +12,7 @@ const mockBase = {
     query: GET_CLIP,
     variables: {
       pk: 'feed',
-      sk: '1532653938'
+      sk: '1533924658'
     }
   }
 };

@@ -4,3 +4,7 @@ body,
 .container {
   height: 100%;
 }
+
+body {
+  padding-top: 96px !important;
+}

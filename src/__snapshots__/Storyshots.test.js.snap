@@ -67,127 +67,61 @@ exports[`Storyshots Button with text 1`] = `
 `;
 
 exports[`Storyshots Clip default 1`] = `
-<article
-  className="sc-htpNat hfcerA"
-  style={undefined}
->
-  <header
-    className="sc-bxivhb eWfrMh"
-  >
-    <h2
-      className="sc-ifAKCX ksCKBv"
-    >
-       
-    </h2>
-    
-  </header>
-  <video
-    autoPlay={true}
-    className="sc-bwzfXH kORQST"
-    controls={true}
-    loop={true}
-    muted={true}
-    poster={undefined}
-  >
-    
-  </video>
-</article>
+<span>
+  loading
+</span>
 `;
 
 exports[`Storyshots Clip error 1`] = `
-<article
-  className="sc-htpNat hfcerA"
-  style={undefined}
->
-  <header
-    className="sc-bxivhb eWfrMh"
-  >
-    <h2
-      className="sc-ifAKCX ksCKBv"
-    >
-       
-    </h2>
-    
-  </header>
-  <video
-    autoPlay={true}
-    className="sc-bwzfXH kORQST"
-    controls={true}
-    loop={true}
-    muted={true}
-    poster={undefined}
-  >
-    
-  </video>
-</article>
+<span>
+  loading
+</span>
 `;
 
 exports[`Storyshots Clip loading 1`] = `
-<article
-  className="sc-htpNat hfcerA"
-  style={undefined}
->
-  <header
-    className="sc-bxivhb eWfrMh"
-  >
-    <h2
-      className="sc-ifAKCX ksCKBv"
-    >
-       
-    </h2>
-    
-  </header>
-  <video
-    autoPlay={true}
-    className="sc-bwzfXH kORQST"
-    controls={true}
-    loop={true}
-    muted={true}
-    poster={undefined}
-  >
-    
-  </video>
-</article>
+<span>
+  loading
+</span>
 `;
 
 exports[`Storyshots ClipPreview hidden 1`] = `
 <article
-  className="sc-htpNat hfcerA"
+  className="sc-bxivhb jSrFNd"
   style={undefined}
 >
   <header
-    className="sc-bxivhb eWfrMh"
+    className="sc-ifAKCX jWSlWo"
   >
     <h2
-      className="sc-ifAKCX ksCKBv"
+      className="sc-EHOje cRPgin"
     >
-      TIL Zen has a boner when he uses his round of applause emote
+      Orisa blushes in the "Goalkeeper" highlight intro if she has Immortal skin equipped.
        
     </h2>
     <aside
-      className="sc-EHOje cKqzRH"
+      className="sc-bZQynM eEDtez"
     >
       Posted
        
       <time
-        dateTime={"2018-07-27T03:40:21.000Z"}
+        dateTime={"2018-08-10T18:10:58.000Z"}
       >
-        2 days ago
+        4 hours ago
       </time>
       <span
-        className="sc-bZQynM bOrPFB"
+        className="sc-gzVnrw ibZhkv"
       >
          by 
-        puzzledclock
+        GamerSinceDiapers
          
       </span>
       <span
-        className="sc-gzVnrw dFnDaj"
+        className="sc-htoDjs qmkbB"
       >
         on
          
         <a
-          href="https://reddit.com/r/Overwatch/comments/9294po/til_zen_has_a_boner_when_he_uses_his_round_of/"
+          href="https://reddit.com/r/Overwatch/comments/969d40/orisa_blushes_in_the_goalkeeper_highlight_intro/"
           rel="noopener"
           target="_blank"
         >
@@ -197,66 +131,73 @@ exports[`Storyshots ClipPreview hidden 1`] = `
       </span>
     </aside>
   </header>
-  <section
-    className="sc-htoDjs duQthk"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "",
-      }
-    }
-    style={
-      Object {
-        "backgroundImage": "url(https://b.thumbs.redditmedia.com/jKN993HxuOlTb9bNerAUR7S3FHZfcnLPN_06GjIbvUE.jpg)",
-      }
-    }
-  />
+  <video
+    className="sc-bwzfXH bXfHuP"
+    loop={true}
+    muted={true}
+    poster="https://thumbs.gfycat.com/ThreadbareFickleKite-mobile.jpg"
+    preload="auto"
+  >
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.mp4"
+      type="video/mp4"
+    />
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.webp"
+      type="video/webp"
+    />
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.webm"
+      type="video/webm"
+    />
+  </video>
 </article>
 `;
 
 exports[`Storyshots ClipPreview visible & link 1`] = `
 <article
-  className="sc-htpNat hfcerA"
+  className="sc-bxivhb jSrFNd"
   style={undefined}
 >
   <header
-    className="sc-bxivhb eWfrMh"
+    className="sc-ifAKCX jWSlWo"
   >
     <h2
-      className="sc-ifAKCX ksCKBv"
+      className="sc-EHOje cRPgin"
     >
       <a
-        href="/1532662821"
+        href="/1533924658"
         onClick={[Function]}
         title="View Overwatch clip details"
       >
-        TIL Zen has a boner when he uses his round of applause emote
+        Orisa blushes in the "Goalkeeper" highlight intro if she has Immortal skin equipped.
       </a>
        
     </h2>
     <aside
-      className="sc-EHOje cKqzRH"
+      className="sc-bZQynM eEDtez"
     >
       Posted
        
       <time
-        dateTime={"2018-07-27T03:40:21.000Z"}
+        dateTime={"2018-08-10T18:10:58.000Z"}
       >
-        2 days ago
+        4 hours ago
       </time>
       <span
-        className="sc-bZQynM bOrPFB"
+        className="sc-gzVnrw ibZhkv"
       >
          by 
-        puzzledclock
+        GamerSinceDiapers
          
       </span>
       <span
-        className="sc-gzVnrw dFnDaj"
+        className="sc-htoDjs qmkbB"
       >
         on
          
         <a
-          href="https://reddit.com/r/Overwatch/comments/9294po/til_zen_has_a_boner_when_he_uses_his_round_of/"
+          href="https://reddit.com/r/Overwatch/comments/969d40/orisa_blushes_in_the_goalkeeper_highlight_intro/"
           rel="noopener"
           target="_blank"
         >
@@ -266,60 +207,67 @@ exports[`Storyshots ClipPreview visible & link 1`] = `
       </span>
     </aside>
   </header>
-  <section
-    className="sc-htoDjs duQthk"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "<iframe class=\\"embedly-embed\\" src=\\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fgfycat.com%2Fifr%2FConcreteCheeryDesertpupfish&url=https%3A%2F%2Fgfycat.com%2FConcreteCheeryDesertpupfish&image=https%3A%2F%2Fthumbs.gfycat.com%2FConcreteCheeryDesertpupfish-size_restricted.gif&key=2aa3c4d5f3de4f5b9120b660ad850dc9&type=text%2Fhtml&schema=gfycat\\" width=\\"600\\" height=\\"253\\" scrolling=\\"no\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen\\" allowfullscreen=\\"true\\"></iframe>",
-      }
-    }
-    style={
-      Object {
-        "backgroundImage": "url(https://b.thumbs.redditmedia.com/jKN993HxuOlTb9bNerAUR7S3FHZfcnLPN_06GjIbvUE.jpg)",
-      }
-    }
-  />
+  <video
+    className="sc-bwzfXH bXfHuP"
+    loop={true}
+    muted={true}
+    poster="https://thumbs.gfycat.com/ThreadbareFickleKite-mobile.jpg"
+    preload="auto"
+  >
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.mp4"
+      type="video/mp4"
+    />
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.webp"
+      type="video/webp"
+    />
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.webm"
+      type="video/webm"
+    />
+  </video>
 </article>
 `;
 
 exports[`Storyshots ClipPreview visible 1`] = `
 <article
-  className="sc-htpNat hfcerA"
+  className="sc-bxivhb jSrFNd"
   style={undefined}
 >
   <header
-    className="sc-bxivhb eWfrMh"
+    className="sc-ifAKCX jWSlWo"
   >
     <h2
-      className="sc-ifAKCX ksCKBv"
+      className="sc-EHOje cRPgin"
     >
-      TIL Zen has a boner when he uses his round of applause emote
+      Orisa blushes in the "Goalkeeper" highlight intro if she has Immortal skin equipped.
        
     </h2>
     <aside
-      className="sc-EHOje cKqzRH"
+      className="sc-bZQynM eEDtez"
     >
       Posted
        
       <time
-        dateTime={"2018-07-27T03:40:21.000Z"}
+        dateTime={"2018-08-10T18:10:58.000Z"}
       >
-        2 days ago
+        4 hours ago
       </time>
       <span
-        className="sc-bZQynM bOrPFB"
+        className="sc-gzVnrw ibZhkv"
       >
          by 
-        puzzledclock
+        GamerSinceDiapers
          
       </span>
       <span
-        className="sc-gzVnrw dFnDaj"
+        className="sc-htoDjs qmkbB"
       >
         on
          
         <a
-          href="https://reddit.com/r/Overwatch/comments/9294po/til_zen_has_a_boner_when_he_uses_his_round_of/"
+          href="https://reddit.com/r/Overwatch/comments/969d40/orisa_blushes_in_the_goalkeeper_highlight_intro/"
           rel="noopener"
           target="_blank"
         >
@@ -329,19 +277,26 @@ exports[`Storyshots ClipPreview visible 1`] = `
       </span>
     </aside>
   </header>
-  <section
-    className="sc-htoDjs duQthk"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "<iframe class=\\"embedly-embed\\" src=\\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fgfycat.com%2Fifr%2FConcreteCheeryDesertpupfish&url=https%3A%2F%2Fgfycat.com%2FConcreteCheeryDesertpupfish&image=https%3A%2F%2Fthumbs.gfycat.com%2FConcreteCheeryDesertpupfish-size_restricted.gif&key=2aa3c4d5f3de4f5b9120b660ad850dc9&type=text%2Fhtml&schema=gfycat\\" width=\\"600\\" height=\\"253\\" scrolling=\\"no\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen\\" allowfullscreen=\\"true\\"></iframe>",
-      }
-    }
-    style={
-      Object {
-        "backgroundImage": "url(https://b.thumbs.redditmedia.com/jKN993HxuOlTb9bNerAUR7S3FHZfcnLPN_06GjIbvUE.jpg)",
-      }
-    }
-  />
+  <video
+    className="sc-bwzfXH bXfHuP"
+    loop={true}
+    muted={true}
+    poster="https://thumbs.gfycat.com/ThreadbareFickleKite-mobile.jpg"
+    preload="auto"
+  >
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.mp4"
+      type="video/mp4"
+    />
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.webp"
+      type="video/webp"
+    />
+    <source
+      src="https://giant.gfycat.com/ThreadbareFickleKite.webm"
+      type="video/webm"
+    />
+  </video>
 </article>
 `;
 
@@ -656,104 +611,41 @@ exports[`Storyshots Logo default 1`] = `
 `;
 
 exports[`Storyshots QueryClips default 1`] = `
-<article
-  className="sc-htpNat hfcerA"
-  style={undefined}
->
-  <header
-    className="sc-bxivhb eWfrMh"
-  >
-    <h2
-      className="sc-ifAKCX ksCKBv"
-    >
-       
-    </h2>
-    
-  </header>
-  <video
-    autoPlay={true}
-    className="sc-bwzfXH kORQST"
-    controls={true}
-    loop={true}
-    muted={true}
-    poster={undefined}
-  >
-    
-  </video>
-</article>
+<div>
+  Loading
+</div>
 `;
 
 exports[`Storyshots QueryClips error 1`] = `
-<article
-  className="sc-htpNat hfcerA"
-  style={undefined}
->
-  <header
-    className="sc-bxivhb eWfrMh"
-  >
-    <h2
-      className="sc-ifAKCX ksCKBv"
-    >
-       
-    </h2>
-    
-  </header>
-  <video
-    autoPlay={true}
-    className="sc-bwzfXH kORQST"
-    controls={true}
-    loop={true}
-    muted={true}
-    poster={undefined}
-  >
-    
-  </video>
-</article>
+<div>
+  Loading
+</div>
 `;
 
 exports[`Storyshots QueryClips loading 1`] = `
-<article
-  className="sc-htpNat hfcerA"
-  style={undefined}
->
-  <header
-    className="sc-bxivhb eWfrMh"
-  >
-    <h2
-      className="sc-ifAKCX ksCKBv"
-    >
-       
-    </h2>
-    
-  </header>
-  <video
-    autoPlay={true}
-    className="sc-bwzfXH kORQST"
-    controls={true}
-    loop={true}
-    muted={true}
-    poster={undefined}
-  >
-    
-  </video>
-</article>
+<div>
+  Loading
+</div>
 `;
 
 exports[`Storyshots VideoPlayer default 1`] = `
 <video
-  autoPlay={true}
-  className="sc-bwzfXH kORQST"
-  controls={true}
+  className="sc-bwzfXH bXfHuP"
   loop={true}
   muted={true}
-  poster="https://b.thumbs.redditmedia.com/jKN993HxuOlTb9bNerAUR7S3FHZfcnLPN_06GjIbvUE.jpg"
+  poster="https://thumbs.gfycat.com/ThreadbareFickleKite-mobile.jpg"
+  preload="auto"
 >
   <source
-    src="https://giant.gfycat.com/ConcreteCheeryDesertpupfish.mp4"
+    src="https://giant.gfycat.com/ThreadbareFickleKite.mp4"
     type="video/mp4"
   />
   <source
-    src="https://giant.gfycat.com/ConcreteCheeryDesertpupfish.webm"
+    src="https://giant.gfycat.com/ThreadbareFickleKite.webp"
+    type="video/webp"
+  />
+  <source
+    src="https://giant.gfycat.com/ThreadbareFickleKite.webm"
     type="video/webm"
   />
 </video>
