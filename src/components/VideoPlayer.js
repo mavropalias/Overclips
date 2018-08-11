@@ -40,6 +40,10 @@ const HtmlEmbedContainer = styled.div`
   }
 `;
 
+function getBaseUrl(url: string): string {
+  return 'https://giant.gfycat.com/' + getVideoId(url);
+}
+
 function canHandleVideoSource(url: string) {
   //TODO: develop this capability further
   if (
@@ -51,10 +55,6 @@ function canHandleVideoSource(url: string) {
 
 function getVideoId(url: string): string {
   return url.substring(url.lastIndexOf('/') + 1);
-}
-
-function getBaseUrl(url: string): string {
-  return 'https://giant.gfycat.com/' + getVideoId(url);
 }
 
 function getThumbUrl(url: string): string {
