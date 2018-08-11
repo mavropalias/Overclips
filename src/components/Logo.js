@@ -1,6 +1,33 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+const Taglines = [
+  'Justice delivered',
+  'Doo-Woo',
+  'Love, D.Va',
+  'Try me',
+  'A steady blade',
+  'Expect nothing less',
+  'Tick-Tock-Tick-Tock',
+  'Give yourself to the rhythm',
+  'Hahaha, Watch and learn',
+  'Hang in there',
+  'I have my eye on you',
+  "I'm simply following my programming",
+  'Put your security in my hands',
+  'What are you looking at',
+  'I salute you',
+  'Welcome to the apocalypse',
+  "I've still got it",
+  "Where's the fun in playing fair?",
+  'Such a lack of imagination',
+  'Hard work pays off',
+  'You got it',
+  'Curious',
+  'Strong as the mountain',
+  'We are in harmony'
+];
+
 const LogoContainer = styled.span`
   display: flex;
   flex-direction: column;
@@ -48,30 +75,3 @@ export default class Logo extends Component {
     );
   }
 }
-
-const Taglines = [
-  'Justice delivered',
-  'Doo-Woo',
-  'Love, D.Va',
-  'Try me',
-  'A steady blade',
-  'Expect nothing less',
-  'Tick-Tock-Tick-Tock',
-  'Give yourself to the rhythm',
-  'Hahaha, Watch and learn',
-  'Hang in there',
-  'I have my eye on you',
-  "I'm simply following my programming",
-  'Put your security in my hands',
-  'What are you looking at',
-  'I salute you',
-  'Welcome to the apocalypse',
-  "I've still got it",
-  "Where's the fun in playing fair?",
-  'Such a lack of imagination',
-  'Hard work pays off',
-  'You got it',
-  'Curious',
-  'Strong as the mountain',
-  'We are in harmony'
-];
