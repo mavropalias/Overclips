@@ -106,7 +106,7 @@ exports[`Storyshots ClipPreview hidden 1`] = `
       <time
         dateTime={"2018-08-10T18:10:58.000Z"}
       >
-        4 hours ago
+        2 days ago
       </time>
       <span
         className="sc-gzVnrw ibZhkv"
@@ -182,7 +182,7 @@ exports[`Storyshots ClipPreview visible & link 1`] = `
       <time
         dateTime={"2018-08-10T18:10:58.000Z"}
       >
-        4 hours ago
+        2 days ago
       </time>
       <span
         className="sc-gzVnrw ibZhkv"
@@ -252,7 +252,7 @@ exports[`Storyshots ClipPreview visible 1`] = `
       <time
         dateTime={"2018-08-10T18:10:58.000Z"}
       >
-        4 hours ago
+        2 days ago
       </time>
       <span
         className="sc-gzVnrw ibZhkv"
