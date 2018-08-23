@@ -84,13 +84,15 @@ export default function Clip({
   style,
   isVisible,
   isScrolling,
-  isLink
+  isLink,
+  showMockDate
 }: {
   clip: IClip,
   style?: {},
   isVisible: boolean,
   isScrolling: boolean,
-  isLink: boolean
+  isLink: boolean,
+  showMockDate: boolean
 }) {
   return (
     <ClipContainer style={style}>
@@ -107,12 +109,18 @@ export default function Clip({
             ) : (
               clip.title
             )
-          ) : null}&nbsp;
+          ) : null}
+          &nbsp;
         </ClipTitle>
         {clip ? (
           <ClipMeta>
             Posted{' '}
-            <Moment interval={0} parse="X" fromNow>
+            <Moment
+              interval={0}
+              parse="X"
+              fromNow={!showMockDate}
+              from={showMockDate ? '2018-08-23' : null}
+            >
               {clip.created_utc}
             </Moment>
             <ClipSubtitle> by {clip.author} </ClipSubtitle>
@@ -124,7 +132,8 @@ export default function Clip({
                 rel="noopener"
               >
                 Reddit
-              </a>.
+              </a>
+              .
             </ClipPermalink>
           </ClipMeta>
         ) : (

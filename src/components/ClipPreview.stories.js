@@ -9,8 +9,8 @@ storiesOf('ClipPreview', module)
   .addDecorator((story) => (
     <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
   ))
-  .add('hidden', () => <ClipPreview clip={clips[0]} />)
-  .add('visible', () => <ClipPreview isVisible clip={clips[0]} />)
+  .add('hidden', () => <ClipPreview showMockDate clip={clips[0]} />)
+  .add('visible', () => <ClipPreview showMockDate isVisible clip={clips[0]} />)
   .add('visible & link', () => (
-    <ClipPreview isVisible isLink clip={clips[0]} />
+    <ClipPreview showMockDate isVisible isLink clip={clips[0]} />
   ));
