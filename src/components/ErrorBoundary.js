@@ -7,7 +7,7 @@ export default class ErrorBoundary extends React.PureComponent {
   }
 
   componentDidCatch(error, info) {
-    this.setState({ hasError: true, error: error, errorInfo: info });
+    this.setState({ hasError: true, error, errorInfo: info });
   }
 
   render() {

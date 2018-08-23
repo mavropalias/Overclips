@@ -33,10 +33,10 @@ export default class QueryClips extends React.PureComponent {
               clips={data.listClips.items}
               loadMoreRows={({ startIndex, stopIndex }) => {
                 return loadMoreRows({
-                  startIndex: startIndex,
-                  stopIndex: stopIndex,
+                  startIndex,
+                  stopIndex,
                   nextToken: data.listClips.nextToken,
-                  fetchMore: fetchMore
+                  fetchMore
                 });
               }}
             />
