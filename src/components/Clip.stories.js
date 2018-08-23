@@ -26,17 +26,6 @@ const mockData = [
   })
 ];
 
-const mockLoading = [
-  Object.assign({}, mockBase, {
-    result: {
-      data: {
-        getClip: null,
-        loading: true
-      }
-    }
-  })
-];
-
 const mockError = [
   Object.assign({}, mockBase, {
     error: new Error('Mock error')
@@ -46,17 +35,6 @@ const mockError = [
 storiesOf('Clip', module)
   .add('default', () => (
     <MockedProvider mocks={mockData} addTypename={false}>
-      <Clip
-        match={{
-          params: {
-            id: '1533869639'
-          }
-        }}
-      />
-    </MockedProvider>
-  ))
-  .add('loading', () => (
-    <MockedProvider mocks={mockLoading} addTypename={false}>
       <Clip
         match={{
           params: {

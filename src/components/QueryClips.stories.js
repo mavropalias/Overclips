@@ -30,17 +30,6 @@ const mockData = [
   })
 ];
 
-const mockLoading = [
-  Object.assign({}, mockBase, {
-    result: {
-      data: {
-        listClips: null,
-        loading: true
-      }
-    }
-  })
-];
-
 const mockError = [
   Object.assign({}, mockBase, {
     error: new Error('Mock error')
@@ -53,11 +42,6 @@ storiesOf('QueryClips', module)
   ))
   .add('default', () => (
     <MockedProvider mocks={mockData} addTypename={false}>
-      <QueryClips />
-    </MockedProvider>
-  ))
-  .add('loading', () => (
-    <MockedProvider mocks={mockLoading} addTypename={false}>
       <QueryClips />
     </MockedProvider>
   ))

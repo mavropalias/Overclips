@@ -78,12 +78,6 @@ exports[`Storyshots Clip error 1`] = `
 </span>
 `;
 
-exports[`Storyshots Clip loading 1`] = `
-<span>
-  loading
-</span>
-`;
-
 exports[`Storyshots ClipPreview hidden 1`] = `
 <article
   className="sc-bxivhb jSrFNd"
@@ -617,12 +611,6 @@ exports[`Storyshots QueryClips default 1`] = `
 `;
 
 exports[`Storyshots QueryClips error 1`] = `
-<div>
-  Loading
-</div>
-`;
-
-exports[`Storyshots QueryClips loading 1`] = `
 <div>
   Loading
 </div>
