@@ -22,14 +22,26 @@ const client: AWSAppSyncClient = new AWSAppSyncClient({
   disableOffline: true
 });
 
-ReactDOM.render(
-  <BrowserRouter>
-    <ApolloProvider client={client}>
-      <Rehydrated
-        render={({ rehydrated }) => (rehydrated ? <App /> : <Header />)}
-      />
-    </ApolloProvider>
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+const render = (Component) => {
+  ReactDOM.render(
+    <BrowserRouter>
+      <ApolloProvider client={client}>
+        <Rehydrated
+          render={({ rehydrated }) => (rehydrated ? <App /> : <Header />)}
+        />
+      </ApolloProvider>
+    </BrowserRouter>,
+    document.getElementById('root')
+  );
+};
+
+render(App);
+
+if (module.hot) {
+  module.hot.accept('./App', () => {
+    const NextApp = require('./App').default;
+    render(NextApp);
+  });
+}
+
 registerServiceWorker();
