@@ -20,7 +20,8 @@
     "react-scripts": "2.0.0",
     "react-virtualized": "^9.20.1",
     "styled-components": "^3.4.4",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "s": "concurrently \"npm run storybook\" \"npm start\"",
@@ -29,7 +30,9 @@
     "deploy": "npm run build && aws s3 sync build/ s3://overclips-static-web-app-deployment --profile overclips-s3-deploy && aws cloudfront create-invalidation --distribution-id E7QZSXUQ1BTHW   --paths /index.html --profile overclips-s3-deploy",
     "test": "react-scripts test --env=jsdom",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public -o docs"
+    "build-storybook": "build-storybook -s public -o docs",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
@@ -44,5 +47,6 @@
     "concurrently": "^3.6.1",
     "flow-bin": "^0.79.1",
     "react-test-renderer": "^16.4.2"
-  }
+  },
+  "snyk": true
 }
