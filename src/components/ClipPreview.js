@@ -131,9 +131,8 @@ export default function Clip({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Reddit
+                r/Overwatch
               </a>
-              .
             </ClipPermalink>
           </ClipMeta>
         ) : (
