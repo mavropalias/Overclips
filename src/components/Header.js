@@ -1,15 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faRedditAlien,
-  faTwitter,
-  faGithub,
-  faGit
-} from '@fortawesome/free-brands-svg-icons';
-import Logo from './Logo';
-import Button from './Button';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Logo from "./Logo";
+import Button from "./Button";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -48,36 +43,21 @@ const MenuContainer = styled.div`
   cursor: default;
 `;
 
-function openSubreddit(): void {
-  window.open('https://reddit.com/r/Overclips', '_blank');
-}
-
-function openTwitter(): void {
-  window.open('https://twitter.com/overclips_', '_blank');
-}
-
 function openGithub(): void {
-  window.open('https://github.com/mavropalias/overclips', '_blank');
+  window.open("https://github.com/mavropalias/overclips", "_blank");
 }
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <MenuContainer>Hero filters coming soon…</MenuContainer>
+      <MenuContainer></MenuContainer>
       <Link to="/" title="Overclips — Best Overwatch potg, highlights & clips">
         <Logo />
       </Link>
       <ButtonsContainer>
-        <Button secondary icon onClick={openTwitter}>
-          <FontAwesomeIcon icon={faTwitter} />
-        </Button>
         <Button secondary icon onClick={openGithub}>
           <FontAwesomeIcon icon={faGithub} />
         </Button>
-        <Button secondary icon onClick={openSubreddit}>
-          <FontAwesomeIcon icon={faRedditAlien} />
-        </Button>
-        {/* <Button disabled>Submit</Button> */}
       </ButtonsContainer>
     </HeaderContainer>
   );

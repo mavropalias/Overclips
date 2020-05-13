@@ -1,11 +1,11 @@
-import React from 'react';
-import { Query } from 'react-apollo';
-import styled from 'styled-components';
+import React from "react";
+import { Query } from "react-apollo";
+import styled from "styled-components";
 
-import ClipPreview from './ClipPreview';
-import Error from './Error';
+import ClipPreview from "./ClipPreview";
+import Error from "./Error";
 
-import { GET_CLIP } from '../graphql/GetClip';
+import { GET_CLIP } from "../graphql/GetClip";
 
 const ClipContainer = styled.article`
   width: 100%;
@@ -15,18 +15,12 @@ const ClipContainer = styled.article`
   text-align: left;
 `;
 
-const Comments = styled.aside`
-  margin-top: 32px;
-  font-size: 12px;
-  color: #727272;
-`;
-
 export default function Clip({ match }) {
   return (
     <Query
       query={GET_CLIP}
       fetchPolicy="cache-first"
-      variables={{ pk: 'feed', sk: match.params.id }}
+      variables={{ pk: "feed", sk: match.params.id }}
     >
       {({ loading, error, data }) => {
         if (loading) {
@@ -49,7 +43,6 @@ export default function Clip({ match }) {
               isScrolling={false}
               isLink={false}
             />
-            <Comments>Reddit comments coming soon...</Comments>
           </ClipContainer>
         );
       }}
