@@ -30,7 +30,7 @@ export default function Clip({ match }) {
     >
       {({ loading, error, data }) => {
         if (loading) {
-          return <span>loading</span>; //<ClipPreview />;
+          return <span />; //<ClipPreview />;
         }
 
         if (error) {
