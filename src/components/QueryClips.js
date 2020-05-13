@@ -22,7 +22,7 @@ export default class QueryClips extends React.PureComponent {
           }
 
           if (loading && !data.listClips) {
-            return <div>Loading</div>;
+            return <span />;
             //return <ClipPreview />;
           } else if (!loading && !data.listClips) {
             return <div>No clips found</div>;
