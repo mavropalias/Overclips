@@ -44,5 +44,11 @@
     "concurrently": "^3.6.1",
     "flow-bin": "^0.79.1",
     "react-test-renderer": "^16.4.2"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
