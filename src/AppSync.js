@@ -7,8 +7,8 @@ interface IAppSyncConfig {
 
 export const appSyncConfig: IAppSyncConfig = {
   graphqlEndpoint:
-    'https://3l5r6pxy2fa67am6uvyze6ucoe.appsync-api.us-east-2.amazonaws.com/graphql',
-  region: 'us-east-2',
-  authenticationType: 'API_KEY',
-  apiKey: 'da2-a2k4zdmp6jaefdmifvljhhn2yy'
+    "https://3l5r6pxy2fa67am6uvyze6ucoe.appsync-api.us-east-2.amazonaws.com/graphql",
+  region: "us-east-2",
+  authenticationType: "API_KEY",
+  apiKey: "da2-imptbt6in5awxn4jkwvinaoztm",
 };
