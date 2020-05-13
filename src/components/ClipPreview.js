@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import Moment from 'react-moment';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import Moment from "react-moment";
 
-import VideoPlayer from './VideoPlayer';
-import { IClip } from '../data/clip.interface';
+import VideoPlayer from "./VideoPlayer";
+import { IClip } from "../data/clip.interface";
 // import DataGatherer from './DataGatherer';
 
 const ClipContainer = styled.article`
@@ -114,22 +114,22 @@ export default function Clip({
         </ClipTitle>
         {clip ? (
           <ClipMeta>
-            Posted{' '}
+            Posted{" "}
             <Moment
               interval={0}
               parse="X"
               fromNow={!showMockDate}
-              from={showMockDate ? '2018-08-23' : null}
+              from={showMockDate ? "2018-08-23" : null}
             >
               {clip.created_utc}
             </Moment>
             <ClipSubtitle> by {clip.author} </ClipSubtitle>
             <ClipPermalink>
-              on{' '}
+              on{" "}
               <a
                 href={`https://reddit.com${clip.permalink}`}
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 Reddit
               </a>
@@ -137,7 +137,7 @@ export default function Clip({
             </ClipPermalink>
           </ClipMeta>
         ) : (
-          ''
+          ""
         )}
       </Header>
       <VideoPlayer
