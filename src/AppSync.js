@@ -10,5 +10,5 @@ export const appSyncConfig: IAppSyncConfig = {
     "https://3l5r6pxy2fa67am6uvyze6ucoe.appsync-api.us-east-2.amazonaws.com/graphql",
   region: "us-east-2",
   authenticationType: "API_KEY",
-  apiKey: "da2-imptbt6in5awxn4jkwvinaoztm",
+  apiKey: "da2-lmk2tefvavcxpeej6n7balgwlq"
 };
